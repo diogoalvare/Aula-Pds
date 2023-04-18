@@ -22,6 +22,11 @@ namespace CalculadoraDeIMC
         public Resultado()
         {
             InitializeComponent();
+
+            CalculoDoIMC cal = new CalculoDoIMC();
+
+            txtResultado.Text = cal.MostrarResultado();
+            
         }
     }
 }

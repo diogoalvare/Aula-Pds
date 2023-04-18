@@ -10,15 +10,19 @@
   <ItemGroup>
     <None Remove="Imagem\ImagemFios.png" />
     <None Remove="Imagem\LogoIMC.png" />
+    <None Remove="Imagem\TabelaDePesos.png" />
     <None Remove="Imagem\TextoAltura.png" />
     <None Remove="Imagem\TextoPeso.png" />
+    <None Remove="Imagem\TextoResultado.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Imagem\ImagemFios.png" />
     <Resource Include="Imagem\LogoIMC.png" />
+    <Resource Include="Imagem\TabelaDePesos.png" />
     <Resource Include="Imagem\TextoAltura.png" />
     <Resource Include="Imagem\TextoPeso.png" />
+    <Resource Include="Imagem\TextoResultado.png" />
   </ItemGroup>
 
 </Project>

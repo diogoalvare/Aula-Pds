@@ -16,22 +16,22 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0" VerticalAlignment="Center">
-            <Image Source="/Imagem/TextoAltura.png" Width="250" Height="250"/>
-            <TextBox Name="txtAltura" Width="340" Height="70" Margin="0,-80,0,0" BorderBrush="White" Background="Black" FontSize="70"/>
+        <StackPanel Grid.Column="0" VerticalAlignment="Center" Margin="0,0,-150,0">
+            <Image Source="/Imagem/TextoAltura.png" Width="250" Height="250" Margin="200,-200,0,0"/>
+            <TextBox Width="340" TextAlignment="Center" Name="txtAltura" Height="70" Margin="200,-80,0,0" FontSize="60"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-100,0,-100,0">
+        <StackPanel Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-100,0,-100,0" Panel.ZIndex="0">
             <Image Source="/Imagem/LogoIMC.png" Width="300" Height="120"/>
         </StackPanel>
 
-        <StackPanel VerticalAlignment="Bottom" Grid.Column="1">
-            <Button x:Name="btnCalcular" Content="Calcular" Height="80" Width="200" FontSize="25" Background="White" Margin="0,0,0,100" Click="btnCalcular_Click"/>
+        <StackPanel VerticalAlignment="Bottom" Grid.Column="1" Panel.ZIndex="0">
+            <Button x:Name="btnCalcular" Content="Calcular" Height="70" Width="150" FontSize="25" Background="White" Margin="0,0,0,180" Click="btnCalcular_Click"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="2" VerticalAlignment="Center">
-            <Image Source="/Imagem/TextoPeso.png" Width="250" Height="250"/>
-            <TextBox Name="txtPeso" Width="340" Height="70" Margin="0,-70,0,0" BorderBrush="White" Background="Black" FontSize="70" SelectionTextBrush="White"/>
+        <StackPanel Grid.Column="2" VerticalAlignment="Center" Margin="0,0,150,0">
+            <Image Source="/Imagem/TextoPeso.png" Width="250" Height="250" Margin="-200,-200,0,0"/>
+            <TextBox Width="340" TextAlignment="Center" Name="txtPeso" Height="70" Margin="-200,-80,0,0" FontSize="60"/>
         </StackPanel>
 
     </Grid>

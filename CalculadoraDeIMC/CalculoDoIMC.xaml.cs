@@ -24,35 +24,40 @@ namespace CalculadoraDeIMC
             InitializeComponent();
         }
 
+        public static double imc = 0;
+
         private void btnCalcular_Click(object sender, RoutedEventArgs e)
         {
+            imc = Convert.ToDouble(txtPeso.Text) / (Convert.ToDouble(txtAltura.Text) * Convert.ToDouble(txtAltura.Text));
             Resultado res = new Resultado();
             res.ShowDialog();
         }
 
-        public double CalculoIMC()
+        public string MostrarResultado()
         {
-            return peso / (altura * altura);
-        }
-
-        public string InterpretarIMC()
-        {
-            double imc = CalcularIMC();
             if (imc < 18.5)
             {
                 return "Abaixo do peso";
             }
-            else if (imc < 25)
+            else if (imc >= 18.5 && imc <= 24.9)
             {
                 return "Peso normal";
             }
-            else if (imc < 30)
+            else if (imc >= 24.9 && imc <= 29.9)
             {
                 return "Sobrepeso";
             }
+            else if (imc >= 29.9 && imc <= 34.9)
+            {
+                return "Obesidade Grau 1";
+            }
+            else if (imc >= 34.9 && imc <= 40)
+            {
+                return "Obesidade Grau 2";
+            }
             else
             {
-                return "Obesidade";
+                return "Obesidade Grau 3";
             }
         }
     }
