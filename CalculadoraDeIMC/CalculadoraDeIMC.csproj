@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Imagem\ImagemFios.png" />
+    <None Remove="Imagem\LogoIMC.png" />
+    <None Remove="Imagem\TextoAltura.png" />
+    <None Remove="Imagem\TextoPeso.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Imagem\ImagemFios.png" />
+    <Resource Include="Imagem\LogoIMC.png" />
+    <Resource Include="Imagem\TextoAltura.png" />
+    <Resource Include="Imagem\TextoPeso.png" />
+  </ItemGroup>
+
+</Project>
